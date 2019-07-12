@@ -1,5 +1,5 @@
 # PKL
-Task PKL 5 Juli - 8 Oktober
+Task PKL 8 Juli - 5 Oktober
 
 Pelatihan kerja lapangan, Praktek kerja lapangan, on-the-job training atau biasa disebut dengan PKL 
 adalah salah satu bentuk kegiatan yang bertempat di lingkungan kerja langsung. PKL bisa dilakukan oleh murid SMA/SMK, 
