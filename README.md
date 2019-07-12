@@ -7,7 +7,8 @@ mahasiswa maupun karyawan baru.
 
 # TASK
 Berisikan semua task selama PKL di UrRemote. 
-1. html : html perhitungan bangun datar dan bangun ruang sederhana.
-
-
+  >  1. html : html perhitungan bangun datar dan bangun ruang sederhana.
+  >  2. ruby : perhitungan luas bangun datar dan bangun ruang menggunakan pemrograman ruby.
+  
+  
 oleh: savanahagusta
