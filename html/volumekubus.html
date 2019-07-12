@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="gambar/profil/koala.png">
+    <title>Menghitung Kubus</title>
+</head>
+
+<body>
+    <!-- Untuk Nav-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Perhitungan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+    </ul>
+
+    <div class="container px-lg-5">
+        <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5 border bg-light" align="center">
+                <div class="card" style="width: 18rem;" align="center">
+                    <img src="gambar/kubus.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>Kubus</b> adalah sebuah bangun ruang 3 dimensi yang memiliki 6 sisi yang semua sisi nya adalah berbentuk persegi dan mempunyai rusuk sebanyak 12 rusuk. Dan semua sudut nya bernilai 90&deg; atau siku-siku.</p>
+                        <p class="card-text"><b>Rumus Kubus:</b></p>
+                        <p class="card-text">Volume = <i>s<sup>3</sup></i></p>
+                        <p class="card-text">Luas Permukaan = <i>6 x s<sup>2</sup></i></p>
+                        <p class="card-text"><em>keterangan :</em> </p>
+                        <p class="card-text"><i>s</i> = sisi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 px-lg-5 border bg-light">
+                <div class="card" style="border-color: white">
+                    <div class="card-header" id="headingThree" style="border-color: black">
+                        <h2 class="mb-0">
+                            Menghitung Kubus:
+                        </h2>
+                    </div>
+                    <div class="container">
+                        <div class="card-body">
+                            <div class="a form-group  col-8 col-sm-10">
+                                <label>Sisi</label>
+                                <input type="number" class="form-control" id="sisi" placeholder="Sisi" name="sisi">
+                            </div>
+                            <div class="a form-group col-8 col-sm-10">
+                                <input type="button" class="btn btn-info" value="Hitung" onclick="hitungKubus()">
+                                <input type="reset" class="btn btn-info" value="Reset">
+                            </div>
+                            <div class="a form-group col-8 col-sm-10">
+                                <label>Volume</label>
+                                <input class="form-control" type="number" id="volume" placeholder="Volume" name="volume" disabled="true" size="5">
+                            </div>
+                            <div class="a form-group col-8 col-sm-10">
+                                <label>Luas Permukaan</label>
+                                <input class="form-control" type="number" id="luas" placeholder="Luas Permukaan" name="luas" disabled="true" size="5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="index.html"><input type="button" class="btn btn-danger" value="Kembali"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/hitung.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

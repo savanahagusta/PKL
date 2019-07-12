@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="gambar/profil/koala.png">
+    <title>Menghitung Balok</title>
+</head>
+
+<body>
+    <!-- Untuk Nav-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Perhitungan</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+    </ul>
+
+    <div class="container px-lg-5">
+        <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5 border bg-light" align="center">
+                <div class="card" style="width: 18rem;" align="center">
+                    <img src="gambar/balok.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>Balok</b> sendiri adalah bangun 3 dimensi yang dibentuk oleh tiga buah pasang persegi dan persegi panjang dengan pasang diantaranya saling berbeda satu sama lain dan memiliki 6 sisi, 12 buah rusuk dan 8 buah titik sudut lalu
+                            permukaan nya masing-masing berbentuk bujur sangkar.</p>
+                        <p class="card-text"><b>Rumus Balok:</b></p>
+                        <p class="card-text">Volume = <i>p x l x t</i></p>
+                        <p class="card-text">Luas Permukaan = <i>2(pxl) + 2(pxt) + 2(lxt)</i></p>
+                        <p class="card-text"><em>keterangan :</em> </p>
+                        <p class="card-text"><i>p</i> = panjang, <i>l</i> = lebar, <i>t</i> = tinggi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 px-lg-5 border bg-light">
+                <div class="card" style="border-color: white">
+                    <div class="card-header" id="headingThree" style="border-color: black">
+                        <h2 class="mb-0">
+                            Menghitung Balok:
+                        </h2>
+                    </div>
+                    <div class="container">
+                        <div class="card-body">
+                            <div class="a form-group  col-8 col-sm-10">
+                                <label>Panjang</label>
+                                <input type="number" class="form-control" id="pj" placeholder="Panjang" name="pj">
+                            </div>
+                            <div class="a form-group  col-8 col-sm-10">
+                                <label>lebar</label>
+                                <input type="number" class="form-control" id="lb" placeholder="Lebar" name="lb">
+                            </div>
+                            <div class="a form-group  col-8 col-sm-10">
+                                <label>Tinggi</label>
+                                <input type="number" class="form-control" id="tg" placeholder="Tinggi" name="tg">
+                            </div>
+                            <div class="a form-group col-8 col-sm-10">
+                                <input type="button" class="btn btn-info" value="Hitung" onclick="hitungBalok()">
+                                <input type="reset" class="btn btn-info" value="Reset">
+                            </div>
+                            <div class="a form-group col-8 col-sm-10">
+                                <label>Volume</label>
+                                <input class="form-control" type="number" id="volume" placeholder="Volume" name="volume" disabled="true" size="5">
+                            </div>
+                            <div class="a form-group col-8 col-sm-10">
+                                <label>Luas Permukaan</label>
+                                <input class="form-control" type="number" id="luas" placeholder="Luas Permukaan" name="luas" disabled="true" size="5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="index.html"><input type="button" class="btn btn-danger" value="Kembali"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/hitung.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
