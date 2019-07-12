@@ -24,10 +24,10 @@ function hitungPersegipanjang() {
 }
 
 function hitungSegitiga() {
-    al = document.getElementById("pj").value;
-    tg = document.getElementById("lb").value;
+    al = document.getElementById("al").value;
+    tg = document.getElementById("tg").value;
     luas = al * tg;
-    kel = (2 * pj + 2 * lb);
+    kel = al * 3;
     document.getElementById("kel").value = kel;
     document.getElementById("luas").value = luas;
 }
