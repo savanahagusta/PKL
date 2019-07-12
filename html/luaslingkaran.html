@@ -4,6 +4,7 @@
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="gambar/profil/koala.png">
     <title>Menghitung Lingkaran</title>
 </head>
 
@@ -26,10 +27,10 @@
                     <div class="card-body">
                         <p class="card-text"><b>Lingkaran</b> merupakan bangun datar yang bentuknya bulat dan tidak bersudut.</p>
                         <p class="card-text"><b>Rumus Lingkaran:</b></p>
-                        <p class="card-text">Luas = phi x r x r</p>
-                        <p class="card-text">Keliling = 2 x phi x r</p>
+                        <p class="card-text">Luas = &pi; r<sup>2</sup></p>
+                        <p class="card-text">Keliling = 2 &pi; r</p>
                         <p class="card-text"><em>keterangan :</em> r = jari-jari</p>
-                        <p class="card-text">phi = 22/7</p>
+                        <p class="card-text">&pi; = 22/7 </p>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
                         <div class="card-body">
                             <div class="a form-group  col-8 col-sm-10">
                                 <label>Jari-jari</label>
-                                <input type="text" class="form-control" id="r" placeholder="jari-jari" name="r">
+                                <input type="number" class="form-control" id="r" placeholder="Jari-jari" name="r">
                             </div>
                             <div class="a form-group col-8 col-sm-10">
                                 <input type="button" class="btn btn-info" value="Hitung" onclick="hitungLingkaran()">
@@ -52,11 +53,11 @@
                             </div>
                             <div class="a form-group col-8 col-sm-10">
                                 <label>Keliling</label>
-                                <input class="form-control" type="text" id="kel" placeholder="Keliling" name="kel" disabled="true" size="5">
+                                <input class="form-control" type="number" id="kel" placeholder="Keliling" name="kel" disabled="true" size="5">
                             </div>
                             <div class="a form-group col-8 col-sm-10">
                                 <label>Luas</label>
-                                <input class="form-control" type="text" id="luas" placeholder="luas" name="luas" disabled="true" size="5">
+                                <input class="form-control" type="number" id="luas" placeholder="Luas" name="luas" disabled="true" size="5">
                             </div>
                         </div>
                     </div>
