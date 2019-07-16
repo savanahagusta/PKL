@@ -1,35 +1,39 @@
-class Er
-	def rop
-		negara = {Finlandia: 'Eropa Utara', Italia: 'Eropa Selatan', Estonia: 'Eropa Timur' , Jerman:'Eropa Barat'}
-		p = 0
-    while p !=5
-			puts "============================"
-			puts "Negara --> Wilayah Benua"
-			puts "============================"
-			puts "1. Finlandia"
-			puts "2. Italia"
-			puts "3. Estonia"
-			puts "4. Jerman"
-			puts "5. Keluar" 
-			puts "============================"
-			print "Masukan Pilihan Anda: "
-			p = gets.to_i
-			puts "============================"
-			
-			if p == 1
-				puts negara[:Finlandia] 
-			elsif p == 2
-				puts negara[:Italia]
-			elsif p == 3
-				puts negara[:Estonia]
-			elsif p == 4
-				puts negara[:Jerman]
-			elsif p == 5
-				load "main.rb"
-			else
-				puts "Anda Salah Memasukan Angka !!"
-				exit
-			end
+class Eropa
+  def eropa
+    load "negara.rb"
+    n = Negara.new
+    negara = { 
+      country: [
+        {negara: 'Finlandia', wilayah: 'Eropa Utara'},
+        {negara: 'Italia', wilayah: 'Eropa Selatan'},
+        {negara: 'Estonia', wilayah: 'Eropa Timur'},
+        {negara: 'Jerman', wilayah: 'Eropa Barat'}
+      ]
+    }
+    puts "-------------------------------------------"
+    puts "  Negara di Eropa  "
+    k=1
+    negara[:country].each do |list| 
+      puts "#{k}. #{list.fetch(:negara)}"
+      k=k+1
+    end
+    puts "(mencari wilayah benua salah satu negara)"
+    puts "wilayah/kembali/keluar"
+    b = gets.chomp
+    if b == "wilayah"
+      m=1
+			negara[:country].each do |list| 
+        puts "#{m}. Negara #{list.fetch(:negara)} berada di Wilayah #{list.fetch(:wilayah)}"
+        m=m+1
+      end
+      n.negara
+    elsif b == "kembali"
+      n.negara
+    elsif b == "keluar"
+      exit
+    else
+      puts "anda salah memasukan inputan !"
+      exit
 		end
-	end
+  end
 end
