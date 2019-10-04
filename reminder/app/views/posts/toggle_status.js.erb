@@ -1,0 +1,2 @@
+var $item = $('#post_item_<%= @post.id.to_s%>')
+$item.replaceWith('<%= j render 'post', post: @post %>')

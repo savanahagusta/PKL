@@ -1,0 +1,15 @@
+<% if post.status == false %>
+	<tr id="post_item_<%= post.id %>">
+		<td><%= post.tanggal %></td>
+		<td><%= post.rencana %></td>
+		<td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<td><%= link_to 'Mark as Done', toggle_status_post_url(post), method: :put, remote: true, :checked => true , class: 'badge badge-danger' %></td>
+	</tr>
+<% else %>
+	<tr id="post_item_<%= post.id %>">
+		<td><%= post.tanggal %></td>
+		<td><%= post.rencana %></td>
+		<td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<td><%= link_to 'Done', toggle_status_post_url(post), method: :put, remote: true, :checked => false , class: 'badge badge-success' %></td>
+	</tr>
+<% end %>

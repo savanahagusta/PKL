@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<h1>New Reminder</h1>
+<%= render 'form', post: @post %>
+<h1>Reminder</h1>
+
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Tanggal dan Waktu</th>
+      <th>Rencana</th>
+      <th class="text-center" colspan="2">...</th>
+    </tr>
+  </thead>
+
+  <tbody id="post_list">
+    <% @posts.each do |p| %>
+      <%= render 'post', post: p %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
